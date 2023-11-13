@@ -1,0 +1,1114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  padding: 0% ;
+  margin: 0% ;
+  box-sizing: border-box !important;
+  font-family: Montserrat;
+  
+}
+
+
+.main_Container {
+  display: flex;
+  min-width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  /* align-items: center; */
+}
+/* ********************HedaerPart Css*************************************** */
+.header-main-div {
+  position: relative;
+  width: 100%;
+  height: 37.5rem;
+  background: url(Imgs/Rectangle\ 2.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rem;
+}
+.nav-main-container {
+  display: flex;
+  width: 100%;
+  height: 6.375rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 3.1875rem 0px 7.5rem;
+  gap: 12.25rem;
+  position: relative;
+}
+.nav-left-part {
+  width: 43.9375rem;
+  display: flex;
+  gap: 3.125rem;
+  z-index: 99999;
+}
+.nav-inner-left {
+  display: flex;
+  gap: 1.25rem;
+}
+.nav-inner-left img {
+  width: 2.625em;
+  gap: 0.625em;
+  height: 2.625em;
+  cursor: pointer;
+}
+.nav-text {
+ 
+  height: 1.25em;
+  line-height: 2.2187em;
+  font-size: 1em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.nav-left-btn {
+  padding: 0.625rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+.nav-right-part {
+  display: flex;
+  height: 3.25rem;
+  gap: 2.5rem;
+}
+.nav-inner-right {
+  display: flex;
+}
+.nav-right-btn1 {
+  height: 2.5rem;
+  width: 5.4rem;
+  padding: 0.625rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+.nav-right-btn2 {
+  width: 8.5625rem;
+  height: 3.25rem;
+  padding: 1rem 2rem 1rem 2rem;
+  color: #ffffff;
+  background: #4300d1;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nav-right-btn1::before,
+.nav-left-btn::before {
+  content: "";
+  background: #5a26cc;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s ease-in-out;
+}
+.nav-right-btn1:hover::before,
+.nav-left-btn:hover::before {
+  width: 100%;
+}
+/*************************Burger-Menu Css***************************************/
+.burger-menu {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 100%;
+  width: 100%;
+  height: 60%;
+  background-color: #000000a3;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.burger-menu-item {
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 1em;
+  
+}
+.burger-menu-item::before {
+  content: "";
+  background: #5a26cc;
+  width: 0%;
+  height: 0.1875rem;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s ease-in-out;
+}
+.burger-menu-item:hover::before {
+  width: 100%;
+}
+.item-last {
+  background-color: #4300d1;
+}
+.changetoflex {
+  right: 0px;
+}
+
+/***************************** Menu Icon Css **********************************/
+.hanburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5rem;
+  z-index: 9999;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 2.1875rem;
+  height: 0.3125rem;
+  background-color: #fffbfb;
+  margin: 0.375rem 0;
+  border-radius: 0.3rem;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 0.6875rem) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -0.6875rem) rotate(45deg);
+}
+/* **********************Hanbuger End ******************************** */
+.main-Search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 53.75rem;
+  height: 10.9375rem;
+  gap: 1.875em;
+}
+.search-text1 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500 !important;
+}
+.search-text2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 700 !important;
+}
+.search-section {
+  width: 38.375rem;
+  height: 5.5rem;
+  padding: 1.75rem 1.25rem 0.75rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  gap: 5rem;
+}
+.search-bar-sec1 {
+  width: 11.75rem;
+  height: 1.1875rem;
+}
+.search-bar-sec1::before {
+  content: "Job Title";
+  position: absolute;
+  top: 27%;
+  font-size: 0.75rem;
+  color: #757575;
+  left: 4rem;
+}
+.search-bar-sec1 span {
+  background: url(Imgs/search-icon.png) no-repeat;
+  color: #757575;
+  height: 1.5rem;
+  width: 1.4rem;
+  display: inline-block;
+  background-size: 1rem;
+  
+}
+.search-bar-sec1 select {
+  position: relative;
+  appearance: none;
+  border: none;
+  height: 1.25rem;
+  width: 9rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  top: -0.7rem;
+  cursor: pointer;
+}
+.search-bar-sec2::before {
+  content: "Location";
+  position: absolute;
+  top: 27%;
+  font-size: 0.75rem;
+  color: #757575;
+  left: 21.3rem;
+}
+.search-bar-sec2 span {
+  background: url(Imgs/location-icon.png) no-repeat;
+  color: #757575;
+  height: 1.4rem;
+  width: 1.4rem;
+  display: inline-block;
+  background-size: 1rem;
+}
+.search-bar-sec2 select {
+  appearance: none;
+  border: none;
+  height: 1rem;
+  width: 8rem;
+  position: relative;
+  font-size: 1rem;
+  top: -0.525rem;
+  left: 0.6rem;
+  cursor: pointer;
+}
+.search-bar-sec2 {
+  margin-left: 1rem;
+}
+.search-btn {
+  width: 3rem;
+  height: 3rem;
+  background-color: #4300d1;
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+.search-btn .search-inner-btn {
+  position: absolute;
+  background: url(Imgs/btn-serch-icon.png) no-repeat 50% 50%;
+  width: 3rem;
+  height: 3rem;
+  background-size: 1.3rem;
+}
+/* *********************************Cotegory Section Css*************************** */
+.main-category-sec {
+  width: 100%;
+  min-height: 50em;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 4rem;
+  
+}
+
+.cotegory-text-sec {
+  width: 14.125em;
+  height: 4.5625em;
+  margin-top: 2em;
+}
+.cotegory-text1 {
+  font-size: 1.25em;
+  color: #424242;
+  text-align: center;
+}
+.cotegory-text2 {
+  font-size: 2.5em;
+  color: #4300D1  ;
+}
+.cotegory-explore-sec{
+  width: 68.5em;
+  min-height: 35.25em;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 1em;
+  column-gap: 2em;
+  place-items: center;
+  
+}
+.cotegory-item{
+  cursor: pointer;
+  width: 15.5em;
+  height: 13.125em;
+  border:1px solid #BDBDBD;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.cotegory-item:hover{
+  border: 1px solid #5a26cc;
+}
+.cotegory-img{
+background-repeat:  no-repeat;
+width: 2.1875em;
+height: 2.1975em;
+background-size: 2.1875em;
+background-image: url(Imgs/categories-imgs/pen-img.png);
+
+}
+.cotegory-text3{
+  font-size: 1.25em;
+  font-weight: 700;
+  color:#252525;
+  font-weight: 700 !important;
+}
+.cotegory-text4{
+  font-size: 1em;
+  font-weight: 600;
+  color:#757575;
+
+}
+
+.cotegory-text4 span{
+ background: url(Imgs/categories-imgs/mingcute_arrow-up-line.png) no-repeat;
+ width: 1.4em;
+ height: 1.4em;
+ background-size: 1.4em;
+ position: relative;
+ left: 1em;
+ top:0.225rem;
+ display: inline-block;
+
+}
+.cotegory-text5{
+  font-size: 1em;
+  color: #5a26cc;
+  width: 77%;
+  text-align: right;
+  cursor: pointer;
+
+}
+.cotegory-text5 span{
+ background: url(Imgs/Purple-arrow.png) no-repeat;
+ width: 1.4em;
+ height: 1.4em;
+ background-size: 1.4em;
+ position: relative;
+ left: 1em;
+ top:0.225em;
+ display: inline-block;
+ 
+
+}
+/* **********************************Social Media Icon************************** */
+.main-Social-media{
+  width: 100%;
+  height: 12.5rem;
+  background: url(Imgs/Social-Section/Social-sec-background.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.social-icon{
+  width: 3.5rem;
+  height: 3.5rem;
+  
+}
+.social-icon-container{
+  width: 55.5rem;
+  height: 3.5175rem;
+  display: flex;
+  gap: 7.5rem;
+}
+.social-icon-container .icon-1{
+  background: url(Imgs/Social-Section/Apple_logo_white\ logo.png) no-repeat;
+  background-size: 3em;
+}
+.social-icon-container .icon-2{
+  background: url(Imgs/Social-Section/Vector\ \(1\).png) no-repeat;
+background-size: 3em;
+}
+.social-icon-container .icon-3{
+  background: url(Imgs/Social-Section/Vector\ \(2\).png) no-repeat;
+background-size: 3em;
+}
+.social-icon-container .icon-4{
+  background: url(Imgs/Social-Section/Group.png) no-repeat;
+  background-size: 3em;
+}
+.social-icon-container .icon-5{
+  background: url(Imgs/Social-Section/Group\ \(1\).png) no-repeat;
+background-size: 3em; 
+}
+.social-icon-container .icon-6{
+  background: url(Imgs/Social-Section/Vector\ \(3\).png) no-repeat;
+background-size: 3em;
+}
+/* ****************************Explore Latest Job Css************************* */
+.main-Latest-Jobs{
+  min-height: 53.625em;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 4em;
+}
+.Latest-Jobs-text-sec{
+  width: 14.875em;
+  height: 4.5625rem;
+  margin-top: 2em;
+}
+.Latest-Jobs-text1{
+  width: 100%;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424242;
+
+}
+.Latest-Jobs-text2{
+  color: #4300D1;
+  font-size: 2.5em;
+
+}
+.Latest-Jobs-item-sec{
+  width: 77.125em;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 2em;
+  column-gap: 1rem;
+  place-items: center;
+
+}
+.Latest-Jobs-item{
+  cursor: pointer;
+  width: 33.5625em;
+  height: 8.9375em;
+  border:1px solid #BDBDBD;
+  padding: 1em 2em 1em 2em;
+  display: flex;
+  flex-direction: column;
+
+}
+.Latest-Jobs-item-part1{
+  width: 31.25em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.Latest-Jobs-item-img{
+  background: url(Imgs/Explore-latest-sec/Huwawei.png) no-repeat;
+  width: 3.75em;
+  height: 3.75em;
+  background-size: 3.75em;
+}
+.Latest-Jobs-item-text-sec{
+  width: 25em;
+  height: 2.75em;
+}
+.Latest-Jobs-item-text2{
+  font-size: 1em;
+  font-weight: 700;
+  color: black;
+}
+.Latest-Jobs-item-text1{
+  font-size: 1em;
+  font-weight: 600;
+  color: #757575;
+}
+.Latest-Jobs-item-part2{
+  width: 100%;
+  min-height: 1.9375em;
+  display: flex;
+  justify-content: center;
+  gap:0.9375em;
+}
+.Latest-Jobs-item-text3{
+  border-radius: 1.875rem;
+  background: #E7FFE3;
+  border: 1px solid #149000;
+  color: #149000;
+  font-size: 0.75em;
+  font-weight: 600; 
+  padding: 0.45em; 
+  cursor: pointer;
+}
+.Latest-Jobs-item-text3 ~span{
+  border-right: 0.14375em solid #BDBDBD ;
+  height: 100%;
+  
+}
+.Latest-Jobs-item-text4{
+  border-radius: 1.875em;
+  border: 1px solid #FFB800;
+  color: #FFB800;
+  padding: 0.45em;
+  font-size: 0.75em;
+  font-weight: 600; 
+  cursor: pointer;
+
+}
+.Latest-Jobs-item-text5{
+  border-radius: 1.875em;
+  color: #4300D1;
+  border: 1px solid #4300D1;
+  font-size: 0.75em;
+  font-weight: 600;  
+  padding: 0.45em; 
+  cursor: pointer;
+
+}
+/* ******************************************Job Seeker Css************************** */
+.main-job-seeker{
+  min-height:30em;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 4em;
+
+}
+.job-seeker-text-sec{
+  width: 15.75em;
+  height: 4.5625em;
+  margin-top: 1em;
+
+}
+.job-seeker-text1{
+  font-size: 1em;
+  font-weight: 600;
+  color: #757575;
+  text-align: center;
+}
+.job-seeker-text2{
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #4300D1;
+
+}
+.job-seeker-explore-items{
+  width: 81.0625rem;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ grid-template-rows: repeat(1,1fr);
+  place-items: center;
+  gap: 2em;
+}
+.job-seeker-item{
+  cursor: pointer;
+  width: 25.6875em;
+  height: 13em;
+  border:1px solid #BDBDBD;
+  padding: 1.875em;
+  display: flex;
+  flex-direction: column;
+
+}
+.job-seeker-item-part1{
+  width: 21.8em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+}
+.job-seeker-item-inner-part1{
+  width: 16.625em;
+  height: 3.75em;
+  display: flex;
+  gap: 0.75em;
+}
+.job-seeker-item-img1{
+  background: url(Imgs/Job-seeker-img/Ellipse\ 1.png) no-repeat;
+  width: 3.75em;
+  height: 3.75em;
+  background-size: 3.75em;
+  
+}
+.job-seeker-item-text-sec{
+  min-width: 6.9375em;
+  height: 2.3125em;
+  display: flex;
+  flex-direction: column;
+}
+.job-seeker-text3{
+  font-size: 1em;
+}
+.job-seeker-text4{
+  font-size: 0.75em;
+  color: #666666;
+}
+.job-seeker-item-img2{
+  background: url(Imgs/Job-seeker-img/Vector\ \(4\).png) no-repeat;
+  background-size: 2.5em 1.875em ;
+  width: 2.5em;
+  height:1.875em;
+}
+.job-seeker-text5{
+  color: #757575;
+
+}
+/* ***********************************Footer Parts********************************* */
+.main-footer-container{
+  background: url(Imgs/footer-imgs/Rectangle\ 37.png) no-repeat;
+  width: 100%;
+  min-height: 19.1875em;
+ display: grid;
+ place-items: center;
+ padding: 2em;
+ 
+  
+}
+.footer-section{
+color: white;
+min-width: 62.1875rem;
+min-height: 12.625rem;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 0px 2em 2em 2em;
+}
+.footer-section-part1{
+  width: 62.1875rem;
+  min-height: 7.625em;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+  gap: 8.0625rem;
+}
+.footer-sec-part1-item1{
+  width: 17.3125em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-sec-part1-item1 .sec-1{
+  width: 100%;
+  height: 2.625em;
+  display: flex;
+  
+  gap: 1rem;
+
+}
+.footer-sec-part1-item1 .sec-2{
+  color: #d7d7d7;
+  width: 17.3125em;
+  height: 3.75em;
+  display: inline-block;
+ 
+}
+.footer-part1-img{
+  background: url(Imgs/footer-imgs/Mask\ group.png) no-repeat 50% 50%;
+  width: 2.625em;
+  height: 2.625em;
+  background-color: white;
+  border-radius: 50%;
+  background-size:  1.725em;
+
+}
+.footer-text1{
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.58625em;
+}
+.footer-sec-part1-item2{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 7.125em;
+ height: 6.5em;
+
+}
+.footer-sec-part1-item2 .sec-1{
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.58625em;
+  
+}
+.footer-sec-part1-item2 .sec-2{
+  font-size: 1em;
+  font-weight: 600;
+ color: #D7D7D7;
+ cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ gap: 0.6em;
+}
+.footer-sec-part1-item3{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 7.125em;
+  height: 6.5em;
+
+}
+.footer-sec-part1-item3 .sec-1{
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.58625em;
+  
+}
+.footer-sec-part1-item3 .sec-2{
+  font-size: 1em;
+  font-weight: 600;
+ color: #D7D7D7;
+ cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ gap: 0.6em;
+}
+.footer-sec-part1-item4{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 7.125em;
+  height: 6.5em;
+
+}
+.footer-sec-part1-item4 .sec-1{
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.58625em;
+  
+}
+.footer-sec-part1-item4 .sec-2{
+  font-size: 1em;
+  font-weight: 600;
+ color: #D7D7D7;
+ cursor: pointer;
+ display: flex;
+ gap: 0.6em;
+}
+.footer-sec-part1-item4 .sec-2 .sec-2-part1{
+  background: url(Imgs/footer-imgs/logo-fb-simple\ 2.png) no-repeat 50% 50%;
+  width: 1.75em;
+  height: 1.75em;
+  background-size: 0.55em;
+  border:0.125em solid #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer-sec-part1-item4 .sec-2 .sec-2-part2{
+  background: url(Imgs/footer-imgs/logo-twitter\ 2.png) no-repeat 50% 50%;
+  width: 1.75em;
+  height: 1.75em;
+  background-size: 0.9em;
+  border: 0.125em  solid #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer-sec-part1-item4 .sec-2 .sec-2-part3{
+  background: url(Imgs/footer-imgs/Group\ \(2\).png) no-repeat 50% 50%;
+  width: 1.75em;
+  height: 1.75em;
+  background-size: 0.9em;
+  border: 0.125em solid #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer-section-part2{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer-text2{
+text-align: center;
+}
+/* *******************************Media Queries***************************** */
+@media screen and (max-width: 50000px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 1435px) {
+  .header-main-div {
+    background-size: 100% 100%;
+  }
+  .job-seeker-explore-items{
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .nav-main-container {
+    gap: 0rem;
+    padding: 0px 3.18rem;
+  }
+ 
+  .nav-right-part {
+    gap: 1rem;
+  }
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  html{
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 820px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .header-main-div {
+    background: url(Imgs/mobileheaderpic.png) no-repeat;
+    background-size: 100%;
+  }
+  .header-main-div {
+    gap: 16rem;
+  }
+  .main_Container{
+    width: 100vw;
+  }
+  .job-seeker-explore-items{
+    grid-template-columns: repeat(1,1fr) !important;
+  }
+  
+  .cotegory-explore-sec{
+    width: 80%;
+  }
+  .Latest-Jobs-text-sec{
+        font-size: 150%;
+  }
+
+ .main-footer-container{
+  font-size: 130%;
+ }
+  .cotegory-text5{
+    font-size: 150%;
+  }
+  
+  .main-job-seeker{
+    font-size: 150%;
+  }
+ 
+  html {
+    font-size: 60%;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+.cotegory-explore-sec{
+  grid-template-columns: repeat(2,1fr) !important;
+  grid-template-rows: repeat(4,1fr) !important;
+  
+}
+.company-content-container{
+  grid-template-columns: repeat(1, 1fr) !important;
+    
+}
+.main-content-applyjob {
+  grid-template-columns: repeat(1, 1fr) !important;
+  padding: 2em;
+}
+.post-part3{
+  grid-column: 1/1 !important;
+  justify-content:flex-start !important;
+  align-items: flex-end !important;
+}
+.post-content-container{
+  grid-template-columns: repeat(1, 1fr) !important;
+  padding: 2em;
+}
+.job-detail-grid1{
+  grid-template-columns: repeat(1, 1fr) !important;
+
+}
+.main-filter-container{
+  font-size: 150%;
+}
+
+.filter-content-part1{
+  display: none !important;
+}
+.footer-section-part1{
+  grid-template-columns: repeat(2,1fr);
+row-gap: 2.5em;
+column-gap: 12.5em;
+    margin-left: 3rem;
+}
+.burger-menu{
+  font-size: 150%;
+}
+.nav-inner-left img {
+  width: 3rem;
+  height: 3rem;
+
+}
+.cotegory-item{
+  width: 17.5em;
+  
+}
+.main-company-container{
+  font-size: 150%;
+}
+.cotegory-explore-sec{
+  /* width: 45.5rem; */
+  font-size: 150%;
+}
+
+
+.cotegory-text-sec{
+  margin-top: 2rem;
+  font-size: 140%;
+  
+}
+  .hanburger {
+    display: inline-block;
+  }
+  .nav-main-container {
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 170%;
+  }
+  .nav-right-part {
+    /* gap: 1rem; */
+    display: none;
+  }
+  .nav-inner-right {
+    display: none;
+  }
+  .nav-left-part {
+    width: fit-content;
+  }
+  .header-main-div {
+    background: url(Imgs/mobileheaderpic.png) no-repeat;
+    background-size: 100%;
+  }
+  .Latest-Jobs-item-sec{
+    grid-template-columns: repeat(1,1fr) !important;
+  }
+ .main-section-applyjob{
+   font-size: 150%;
+ } 
+ .main-postJob-container{
+font-size: 150%;
+ }
+  .Latest-Jobs-item{
+    font-size: 150%;
+  }
+  .main-footer-container{
+    font-size: 150%;
+  }
+  .job-detail-main{
+    font-size: 150%;
+    justify-content: flex-start !important;
+  }
+
+  html {
+    font-size: 40%;
+   
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .job-detail-main {
+    font-size: 125%;
+  }
+}
+@media screen and (max-width: 375px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .main-company-container{
+    font-size: 110% !important;
+  }
+  html {
+    
+    font-size: 30%;
+  }
+  .cotegory-text5{
+    font-size: 130%;
+  }
+  .Latest-Jobs-item{
+    font-size: 150%;
+  }
+   .Latest-Jobs-item{
+    font-size: 150%;
+  }
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .job-detail-main {
+    font-size: 140%;
+  }
+  .apply-sec-text3 {
+    font-size: 1em !important;
+    
+  }
+
+}
+@media screen and (max-width: 320px) {
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+  .cotegory-text5{
+    font-size: 150%;
+  }
+  .Latest-Jobs-item{
+    font-size: 150%;
+  }
+ .cotegory-explore-sec{
+  font-size: 150% !important;
+ }
+ /* .main_Container{
+  width: 200%;
+} */
+.main-company-container{
+  font-size: 100% !important;
+}
+
+.job-detail-main{
+  font-size: 120% !important;
+}
+
+ html{
+  
+  font-size: 28%;
+ }
+}

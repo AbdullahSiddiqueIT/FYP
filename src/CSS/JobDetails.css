@@ -1,0 +1,73 @@
+.job-detail-main {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 94.75rem;
+  
+}
+.job-detail-container {
+  min-width: 80%;
+  min-height: 90%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2em;
+  gap: 2em;
+}
+.job-detail-grid1 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4em;
+}
+.job-detail-grid1-part1,
+.job-detail-grid1-part2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.job-detail-grid2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+}
+.job-detail-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+.job-detail-head-text {
+  font-size: 2em;
+  font-weight: 700;
+}
+.job-detail-lower-text {
+  font-size: 0.875em;
+  color: #757575;
+}
+.job-detail-requirement,
+.job-detail-des {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.job-detail-text-head {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.job-detail-text-para {
+  font-size: 0.875em;
+  color: #757575;
+}
+.job-detail-btn {
+  width: 10.9375em;
+  height: 3.25em;
+  padding: 1em 1.25em 1em 1.25em;
+  color: white;
+  background-color: #4300D1;
+  text-align: center;
+  cursor: pointer;
+
+}

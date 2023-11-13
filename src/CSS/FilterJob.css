@@ -1,0 +1,193 @@
+.main-filter-container {
+  width: 100%;
+  height: 88.75em;
+  display: flex;
+  justify-content: center;
+}
+.filter-content {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 90%;
+  height: 80%;
+  gap: 2em;
+}
+.filter-content-part1 {
+  width: 13.625em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.filter-content-part2 {
+  width: 55.6875em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.filter-text1 {
+  display: flex;
+  gap: 1.5em;
+  font-weight: 700;
+  font-size: 1em;
+}
+.filter-arrow {
+  background-color: transparent;
+  padding: 0.2em 0.3em 0.2em 0.3em;
+  background: url(Imgs/Job-filter-imgs/arraow.png) 50% 50%;
+  background-size: 1.4em;
+  width: 1.5em;
+  height: 1.5em;
+  font-weight: 700;
+  border: none;
+}
+.checkbox-container {
+  display: flex;
+  gap: 0.4em;
+}
+.checkbox-container > label {
+  color: #757575;
+  font-size: 0.875em;
+}
+.filter-tools-bar {
+  display: flex;
+  width: 100%;
+  height: 3em;
+  justify-content: space-between;
+}
+.filter-tool-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.filter-text2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.filter-text3 {
+  font-size: 0.875em;
+  color: #757575;
+}
+.filter-text4 {
+  font-size: 0.875em;
+}
+.filter-text4 > span {
+  font-size: 0.875em;
+  color: #757575;
+}
+.filter-tool-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.flter-tool-btns {
+  display: flex;
+  gap: 1em;
+}
+.flter-tool-btns > span {
+  height: 50%;
+  width: 2px;
+  display: inline-block;
+  background-color: #bdbdbd;
+  border: 5px;
+  border-color: #bdbdbd;
+}
+.filter-grid-row-view {
+  background-color: transparent;
+  padding: 0.2em 0.3em 0.2em 0.3em;
+  background: url(Imgs/Job-filter-imgs/mingcute_grid-col.png) 50% 50%;
+  background-size: 1.4em;
+  width: 1.5em;
+  height: 1.5em;
+  font-weight: 700;
+  border: none;
+}
+.filter-grid-col-view {
+  background-color: transparent;
+  padding: 0.2em 0.3em 0.2em 0.3em;
+  background: url(Imgs/Job-filter-imgs/mingcute_grid-line.png) 50% 50%;
+  background-size: 1.4em;
+  width: 1.5em;
+  height: 1.5em;
+  font-weight: 700;
+  border: none;
+}
+.filter-range-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+.filter-range {
+  width: 100%;
+  background-color: #bdbdbb;
+  height: 3px;
+  position: relative;
+  border-radius: 4em;
+}
+.filter-range-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 4em;
+  background-color: blue;
+}
+.filteritems-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+  padding-top: 1em;
+}
+.filter-item-sec-part1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.filter-item-sec-part1 > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.filter-item-section {
+  width: 55.6875em;
+  height: 8.9375em;
+  padding: 1em 1.25em 1em 1.25em;
+  border: 1px solid #dbdbdb;
+}
+.filter-item-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 1.25em 1em 1.25em;
+}
+.filter-item-img{
+    background: url(Imgs/Job-filter-imgs/Ellipse\ 3.png) 50% 50%;
+    width: 5em;
+    height: 5em;
+    background-size: 4em;
+
+}
+.filter-item-sec-part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.filter-apply-btn{
+    color: white;
+    background-color: #4300D1;
+    padding: 1em 1.25em 1em 1.25em;
+    font-size: 1em;
+    width: 9.375rem;
+    height: 3.25em;
+}
+.filter-text6{
+    font-size: 0.875em;
+    color: #757575;
+
+}
